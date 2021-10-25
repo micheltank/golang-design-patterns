@@ -1,4 +1,4 @@
-package parameter
+package main
 
 import "strings"
 
@@ -38,6 +38,7 @@ func sendMailImpl(email *email) {
 }
 
 type build func(*EmailBuilder)
+
 func SendEmail(action build) {
 	builder := EmailBuilder{}
 	action(&builder)

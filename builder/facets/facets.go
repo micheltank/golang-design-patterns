@@ -1,11 +1,11 @@
-package facets
+package main
 
 import "fmt"
 
 type Person struct {
 	StreetAddress, Postcode, City string
-	CompanyName, Position string
-	AnnualIncome int
+	CompanyName, Position         string
+	AnnualIncome                  int
 }
 
 type PersonBuilder struct {
